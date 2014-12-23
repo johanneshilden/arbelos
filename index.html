@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Arbelos | Web application middleware built on functional programming foundations</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#arbelos-menu">
+
+    <nav class="menu" id="arbelos-menu">
+      <div class="menu-wrap">
+        <a href="#home" class="smoothScroll">Home</a>
+        <a href="#concepts" class="smoothScroll">Concepts and Technologies</a>
+        <a href="#solutions" class="smoothScroll">Solutions</a>
+	<a href="#contact" class="smoothScroll">Contact</a>
+      </div>
+      <div id="menuToggle"><i class="ion-navicon-round"></i></div>
+    </nav>
+
+    <div id="h">
+      <div id="home" class="logo">
+        <h1><a href="#">ARBELOS</a></h1>
+      </div>
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <h1>Web application <b>middleware</b> built on <b>functional</b> programming foundations</h1>
+          </div>
+        </div>
+        <div class="row mt">
+          <div class="col-sm-4">
+            <i class="ion-iphone"></i>
+            <h3>Mobile and hybrid web application APIs</h3>
+            <span class="label label-default label-blk" style="">Lightweight mid-tier service components.</span>
+          </div>
+          <div class="col-sm-4">
+            <i class="ion-ios7-cloud-outline"></i>
+            <h3>Cloud and web server middleware</h3>
+            <span class="label label-default label-blk">Data access layers, custom solutions</span>
+            <span class="label label-default label-blk">based on AMQP, OAuth2, REST etc.</span>
+          </div>
+          <div class="col-sm-4">
+            <i class="ion-loop"></i>
+            <h3>Adaptation of RDBMS for modern web infrastructures</h3>
+            <span class="label label-default label-blk">Have SQL?</span>
+            <span class="label label-default label-blk">Need REST/JSON?</span>
+            <span class="label label-default label-blk">We know the feeling.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container ptb">
+      <div class="row">
+        <h1 id="concepts" class="centered mb">Concepts &amp; Core Technologies</h1>
+        <div class="col-md-4">
+          <h5><b>Functional Programming Foundations</b></h5>
+          <p><span class="lambda">&#955;</span>The referential transparency guarantee introduced by pure functional programming can improve correctness and security of software systems drastically. Through strong static typing and elimination of destructive assignment, equational reasoning and formal proof verification techniques become applicable to program code.</p>
+        </div>
+        <div class="col-md-4">
+          <h5><b>Free Software Community Engagement</b></h5>
+          <p><i class="ion-social-tux inline-icon"></i>Open source technologies drive innovation in the same way that open standards have served as a catalyst for the evolution of Internet. Collaborative software development is ubiquitous in today's technology landscape and has shown that greater transparency and cooperation between interested parties results in better software.</p>
+        </div>
+        <div class="col-md-4">
+          <h5><b>Cross-Platform Solutions</b></h5>
+          <p><i class="ion-code inline-icon"></i>The in-browser "one page" paradigm has emerged as an alternative to native SDKs, leveraging web standards to deliver device-independent client-side code. Various compile-to-javascript tools exist (PureScript, Fay, Elm etc.) which can facilitate in building single-page applications that run in all modern browsers, using declarative programming practices.</p>
+        </div>
+        <div class="row centered">
+          <h2>&hellip;</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="content">
+      <div class="container ptb">
+        <div class="row">
+          <h1 id="solutions" class="centered mb">Some projects and solutions</h1>
+          <div class="col-md-6">
+            <h3>RESTful APIs for relational data</h3>
+            <p>The Trombone server simplifies adaptation of relational data to mobile-friendly APIs operating within the RESTful web service paradigm, with data exchange driven by JSON.
+            It enables one-to-one mapping of HTTP requests to database statements according to rules layed out by a set of route templates.</p>
+            <pre><code style="color:#999"># Create a new customer</code>
+<code style="color:#c7254e">POST</code> <code style="color:#2f6f9f">/customer</code>  <code style="color:#c7254e"><></code>
+
+    <code style="color:#2f6f9f">INSERT INTO</code> customers (name, phone, industry)
+      <code style="color:#2f6f9f">VALUES</code> (<code style="color:#4f9fcf">{{name}}</code>, <code style="color:#4f9fcf">{{phone}}</code>, <code style="color:#4f9fcf">{{industry}}</code>)
+</pre>
+            <h3>Client-side Haskell application toolkit</h3>
+            <p>Liquid Epsilon is a collection of tools for building browser-based applications using UHC-JS and its facilities for translation of Haskell programs to JavaScript.</p>
+            <pre>connectAnd <code style="color:#c7254e">"ws://localhost:9160"</code> <code style="color:#2f6f9f">$</code> &#955;<code style="color:#2f6f9f">sock</code> &#8594; <code style="color:#4f9fcf">do</code>
+    onOpen <code style="color:#2f6f9f">sock</code> <code style="color:#2f6f9f">$</code> send <code style="color:#2f6f9f">sock</code> <code style="color:#c7254e">"Hi!"</code>
+    onMessage <code style="color:#2f6f9f">sock</code> <code style="color:#2f6f9f">$</code> &#955;<code style="color:#2f6f9f">msg</code> &#8594; <code style="color:#4f9fcf">do</code>
+        <code style="color:#999">-- Process incoming message here...</code>
+</pre>
+            <p><small>These libraries are freely available for use under the BSD license.</small></p>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">High-performance http middleware</div>
+              <div class="panel-body">
+                <h4><b>Purely functional solutions</b></h4>
+                <p>The side-effect free semantics of Haskell makes it ideal for concurrent and parallel programming. Solutions are inherently lock-free and highly scalable due to utilization of lightweight threads.</p>
+                <span class="label label-default" style="">Haskell</span>
+                <span class="label label-default" style="">STM</span>
+                <span class="label label-default" style="">green threads</span>
+                <span class="label label-default" style="">C10k</span>
+                <hr>
+                <h4><b>Asynchronous event-loop systems</b></h4>
+                <p>Event-loop systems written in C/C++ have very low memory footprint, are single-threaded and use non-blocking I/O, which can be beneficial for applications, such as web servers, that are not CPU-bound.</p>
+                <span class="label label-default" style="">C</span>
+                <span class="label label-default" style="">C++</span>
+                <span class="label label-default" style="">libev</span>
+                <span class="label label-default" style="">libevent</span>
+                <span class="label label-default" style="">async I/O</span>
+                <span class="label label-default" style="">event loop</span>
+                <span class="label label-default" style="">single-thread</span>
+                <hr>
+                <h4><b>Message-oriented communication software</b></h4>
+                <p>In the publish and subscribe model, decoupling is achieved through delegation of message delivery to an intermediary service broker.</p>
+                <span class="label label-default" style="">RabbitMQ</span>
+                <span class="label label-default" style="">Pub/Sub</span>
+                <span class="label label-default" style="">WebSockets</span>
+                <span class="label label-default" style="">STOMP</span>
+                <span class="label label-default" style="">SockJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container app-bg">
+        <div class="row centered">
+          <img src="assets/img/app-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="g">
+      <div class="container">
+        <div class="row centered">
+          <h2 id="contact">Welcome to talk to us</h2>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Do you have an interesting project or idea that you'd like to discuss?<br>Drop us an email or, if you fancy IRC, <code>/msg arbelos</code> in<br><code>irc://freenode.net/#haskell</code> or <code>#haskell.se</code>.</p>
+            <div class="col-lg-4">
+              <h3><b>Send a message:</b> hi@arbelos.se</h3>
+              <h6>(Vi pratar &auml;ven svenska)</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="http://github.com/johanneshilden"><i class="ion-social-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script>
+        (function(){
+            $('#menuToggle, .menu-close').on('click', function(){
+                $('#menuToggle').toggleClass('active');
+                $('body').toggleClass('body-push-toleft');
+                $('#arbelos-menu').toggleClass('menu-open');
+            });
+        })(jQuery)
+    </script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+  </body>
+</html>
