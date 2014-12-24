@@ -103,10 +103,12 @@
             <p>The Trombone server simplifies adaptation of relational data to mobile-friendly APIs operating within the RESTful web service paradigm, with data exchange driven by JSON.
             It enables one-to-one mapping of HTTP requests to database statements according to rules layed out by a set of route templates.</p>
             <pre><code style="color:#999"># Create a new customer</code>
+<code style="color:#999">#   e.g. POST /customer { "name"     : "ACME", 
+#                         "phone"    : "555-BIZNESS", 
+#                         "industry" : "Robotics" }</code>
 <code style="color:#c7254e">POST</code> <code style="color:#2f6f9f">/customer</code>  <code style="color:#c7254e"><></code>
-
-    <code style="color:#2f6f9f">INSERT INTO</code> customers (name, phone, industry)
-      <code style="color:#2f6f9f">VALUES</code> (<code style="color:#4f9fcf">{{name}}</code>, <code style="color:#4f9fcf">{{phone}}</code>, <code style="color:#4f9fcf">{{industry}}</code>)
+  <code style="color:#2f6f9f">INSERT INTO</code> customers (name, phone, industry)
+    <code style="color:#2f6f9f">VALUES</code> (<code style="color:#4f9fcf">{{name}}</code>, <code style="color:#4f9fcf">{{phone}}</code>, <code style="color:#4f9fcf">{{industry}}</code>)
 </pre>
             <h3>Client-side Haskell application toolkit</h3>
             <p>Liquid Epsilon is a collection of tools for building browser-based applications using UHC-JS and its utilities for translation of Haskell programs to JavaScript.</p>
