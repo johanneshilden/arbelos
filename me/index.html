@@ -35,7 +35,7 @@
           <p class="lead" style="text-align: center; margin-bottom: 0.3em;"><small>
             Functional programming &nbsp; &bullet; &nbsp; BSD Sockets/Network programming &nbsp; &bullet; &nbsp; Haskell<br>
             C/C++ &nbsp; &bullet; &nbsp; Event-driven &amp; Asynchronous I/O &nbsp; &bullet; &nbsp; Server middleware<br>
-            Web technologies &nbsp; &bullet; &nbsp; Qt Framework (Nokia Certified Developer)</small>
+	    Web technologies &nbsp; &bullet; &nbsp; Qt Framework <small><small>(Nokia Certified Developer)</small></small></small>
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="col-lg-6">
           <h4 style="margin-top: 0;">Other relevant experience</h4>
-          <p>Familiarity with foundational web technologies (HTML, CSS, JavaScript etc.); protocols (network programming/BSD sockets); and Unix-like environments, in particular Debian GNU/Linux. I have worked with the LAMP stack (PHP/MySQL) as well as with more modern web technologies, including nginx, CouchDB, node.js and a variety of client-side JavaScript libraries such as Backbone.js, Underscore.js and jQuery.</p>
+          <p>Familiarity with foundational web technologies (HTML, CSS, JavaScript etc.); protocols (network programming/BSD sockets); and Unix-like environments, in particular Debian GNU/Linux. I have worked with the LAMP stack (PHP/MySQL) as well as with more modern web technologies, including nginx, CouchDB, node.js and a variety of client-side JavaScript libraries such as Backbone.js, Underscore and jQuery.</p>
           <p>Being acquainted with software development best practices in general, I also do version control (Git/Darcs), unit testing, write <a href="http://trombone.readthedocs.org/en/latest/middleware.html">beautiful documentation</a> and regularly use packaging and build tools such as Cabal, Grunt and make.</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <p>
         <ul>
           <li>F# (Xamarin/Android) <i>Writing Android apps using F#/.NET on Linux sounds almost like science-fiction.</i></li>
-          <li>An experimental, <a href="https://github.com/johanneshilden/hippo-in-a-haystack">in-memory distributed database</a> in Haskell.</li>
+          <li>An experimental, <a href="https://github.com/johanneshilden/hippo-in-a-haystack">in-memory database</a> in Haskell.</li>
           <li>Idris and dependently typed programming (formal program verification and proof techniques).</li>
         </ul>
       </p>
@@ -86,7 +86,7 @@ POST /customer  <>
     VALUES ({{name}}, {{phone}}, {{industry}})</pre>
       <p>The route format is given by the following, simplified grammar.</p>
       <pre>&lt;route&gt; ::= &lt;method&gt; &lt;uri&gt; &lt;symbol&gt; &lt;action&gt;</pre>
-      <p>During dispatch the server instantiates the template, replacing placeholder variables with actual data, supplied in the request body and uri components.</p>
+      <p>The server instantiates the template during dispatch, replacing placeholder variables with actual data, supplied in the request body and uri components.</p>
       <p>Trombone is written in Haskell and available for use under the BSD license.</p>
       <p>
         <ul>
