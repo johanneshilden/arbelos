@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>me</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/ionicons.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      @media print {
+        @page {
+          size: 330mm 427mm;
+          margin: 34mm;
+        }
+        .container {
+          width: 970px;
+        }
+      }
+    </style>
+
+    <script src="assets/js/jquery.min.js"></script>
+	
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Open-Source Projects</h1>
+      <h2>Trombone</h2>
+      <p>
+        <span class="label label-default" style="">Haskell</span>
+        <span class="label label-default" style="">REST</span>
+        <span class="label label-default" style="">PostgreSQL</span>
+        <span class="label label-default" style="">Middleware</span>
+      </p>
+      <p>The Trombone data access server streamlines adaptation of relational SQL schemas to mobile-friendly JSON-APIs operating within the RESTful web service paradigm. Or, in plain Swedish:</p>
+      <blockquote>
+        <p>Trombone &auml;r en robust serverapplikation som m&ouml;jligg&ouml;r smidig anpassning av SQL-databaser till REST/JSON-gr&auml;nssnitt, l&auml;mpliga f&ouml;r mobila webbl&ouml;sningar och hybrida applikationer d&auml;r st&ouml;rre delen av programlogiken ligger p&aring; klienten.</p>
+      </blockquote>
+      <h4>How it works</h4>
+      <p>Rules are layed out by a set of route templates:</p>
+      <pre># Create a new customer
+#   e.g. POST /customer { "name"     : "ACME", 
+#                         "phone"    : "555-BIZNESS", 
+#                         "industry" : "Robotics" }
+POST /customer  <>
+  INSERT INTO customers (name, phone, industry)
+    VALUES ({{name}}, {{phone}}, {{industry}})</pre>
+      <p>The route format is given by the following, simplified grammar.</p>
+      <pre>&lt;route&gt; ::= &lt;method&gt; &lt;uri&gt; &lt;symbol&gt; &lt;action&gt;</pre>
+      <p>The server instantiates the template during dispatch, replacing placeholder variables with actual data, supplied in the request body and uri components.</p>
+      <p>Trombone is written in Haskell and available for use under the BSD license.</p>
+      <p>
+        <ul>
+          <li><a href="https://github.com/johanneshilden/trombone">Source code on GitHub</a></li>
+  	<li><a href="http://trombone.readthedocs.org/en/latest/">Documentation</a></li>
+  	<li><a href="https://trombone-demo.herokuapp.com/index.html">Live demo</a></li>
+        </ul>
+      </p>
+      <h2>QtZeroConf</h2>
+      <p>
+        <span class="label label-default" style="">C++</span>
+        <span class="label label-default" style="">Qt</span>
+        <span class="label label-default" style="">ZeroConf</span>
+      </p>
+      <p>QtZeroConf is a high-level Zeroconf interface for C++/Qt-based client-server applications, leveraging the <i>Observer</i> pattern and Qt's signals/slots mechanism. It is layered over Avahi &mdash; a technology which implements the Apple Zeroconf specification to facilitate service discovery on a local network via the mDNS/DNS-SD protocol suite.</p>
+      <blockquote>
+        <p>Ett Zeroconf-gr&auml;nssnitt f&ouml;r klient-serverprogramvara baserad p&aring; ramverket Qt. Zeroconf f&ouml;renklar uppgiften att hitta lokala n&auml;tverkstj&auml;nster s&aring;som skrivare och fildelningsprogram &ouml;ver ett LAN. Programbiblioteket anv&auml;nder sig av Qt:s signal/slots-mekanism f&ouml;r att s&ouml;ka asynkront efter tillg&auml;ngliga tj&auml;nster med hj&auml;lp av s.k. multicast DNS och DNS Service Discovery. L&ouml;sningen bygger p&aring; Avahi, som &auml;r en fri implementation av Apples Zeroconf-specifikation.</p>
+      </blockquote>
+      <p>
+        <ul>
+          <li><a href="https://github.com/johanneshilden/qtzeroconf">Source Code</a></li>
+          <li><a href="http://atomic.batcave.net/qtzeroconf/doxygen/">Documentation</a></li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>
