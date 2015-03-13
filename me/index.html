@@ -86,7 +86,7 @@ POST /customer  <>
     VALUES ({{name}}, {{phone}}, {{industry}})</pre>
       <p>The route format is given by the following, simplified grammar.</p>
       <pre>&lt;route&gt; ::= &lt;method&gt; &lt;uri&gt; &lt;symbol&gt; &lt;action&gt;</pre>
-      <p>The server instantiates the template during dispatch, replacing placeholder variables with actual data, supplied in the request body and uri components.</p>
+      <p>The server instantiates the template during dispatch, replacing placeholder variables with actual data, supplied via the request body and uri components.</p>
       <p>Trombone is written in Haskell and available for use under the BSD license.</p>
       <p>
         <ul>
